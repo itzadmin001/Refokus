@@ -31,7 +31,7 @@ function Strips() {
         }
     ]
     return (
-        <div className='md:flex block mt-20 items-center'>
+        <div className='md:flex block mt-20 items-center p-2'>
             {
                 data.map((item, index) => {
                     return <Strip key={index} val={item} />

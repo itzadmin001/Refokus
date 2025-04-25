@@ -4,7 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 function Card({ width, start, para, hover = "false" }) {
 
   return (
-    <motion.div whileHover={{ background: hover === "true" && "#7443ff", padding: "25px" }} className={`${width} bg-zinc-800 p-5 rounded-xl  duration-300 text-white md:min-h-96 min-h-60 flex flex-col  justify-between`}>
+    <motion.div whileHover={{ background: hover === "true" && "#7443ff", padding: "25px" }} className={`md:${width} bg-zinc-800 p-5 rounded-xl  duration-300 text-white md:min-h-96 min-h-60 flex flex-col  justify-between`}>
       <div className='w-full'>
         <div className='w-full flex  justify-between items-center'>
           <h3>one Heading</h3>

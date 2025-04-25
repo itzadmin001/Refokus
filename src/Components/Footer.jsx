@@ -21,7 +21,7 @@ function Footer() {
     return (
         <div className=' w-full py-5 '>
             <div className='max-w-screen-xl mx-auto flex justify-between items-center p-4'>
-                <ul className='md:flex flex-col gap-5  text-zinc-500'>
+                <ul className='md:flex gap-5  text-zinc-500'>
                     {
                         FooterMenu.map((menu, index) => {
                             return (

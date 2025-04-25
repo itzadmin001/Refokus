@@ -57,12 +57,12 @@ function Products() {
         }
     ]
 
-const [pos , Setpos] = useState(0)
+    const [pos, Setpos] = useState(0)
     const mover = (val) => {
-        Setpos(val*19)
+        Setpos(val * 19)
     }
     return (
-        <div className='mt-10 relative '>
+        <div className='mt-10 relative'>
             {
                 products.map((product, index) => {
                     return (<Product mover={mover} key={index} count={index} product={product} />)
@@ -71,27 +71,27 @@ const [pos , Setpos] = useState(0)
                 )
             }
             <div className='absolute top-0 w-full h-full pointer-events-none '>
-                <motion.div initial={{ y: pos , x: "-50%  "}} animate={{y: pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className='absolute w-[26rem] h-[19rem] left-[43%]  overflow-hidden'>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-red-400'> 
-                    <video autoPlay muted={true} loop={true} src={FirstVideo}></video>
+                <motion.div initial={{ y: pos, x: "-50%  " }} animate={{ y: pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className='absolute md:w-[26rem] w-[18rem] md:h-[12rem] h-[10rem] md:left-[43%] left-[50%] overflow-hidden'>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className='w-full h-full bg-red-400'>
+                        <video autoPlay muted={true} loop={true} src={FirstVideo}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-sky-300'> 
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-sky-300'>
                         <video autoPlay muted={true} loop={true} src={Second}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-green-300'> 
-                    <video autoPlay muted={true} loop={true} src={third}></video>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-green-300'>
+                        <video autoPlay muted={true} loop={true} src={third}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-slate-200'>
-                    <video autoPlay muted={true} loop={true} src={Fourth}></video>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-slate-200'>
+                        <video autoPlay muted={true} loop={true} src={Fourth}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-blue-300'>
-                    <video autoPlay muted={true} loop={true} src={fivth}></video>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-blue-300'>
+                        <video autoPlay muted={true} loop={true} src={fivth}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-blue-300'>
-                    <video autoPlay muted={true} loop={true} src={seven}></video>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-blue-300'>
+                        <video autoPlay muted={true} loop={true} src={seven}></video>
                     </motion.div>
-                    <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1] , duration : 0.5}} className=' w-full h-full bg-blue-300'>
-                    <video autoPlay muted={true} loop={true} src={sixth}></video>
+                    <motion.div animate={{ y: -pos + `rem` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }} className=' w-full h-full bg-blue-300'>
+                        <video autoPlay muted={true} loop={true} src={sixth}></video>
                     </motion.div>
                 </motion.div>
             </div>
